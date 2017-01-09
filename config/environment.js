@@ -4,6 +4,14 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'etasks',
     environment: environment,
+    contentSecurityPolicy: {'connect-src':"'self' wss://*.firebaseio.com"},
+    firebase: {
+      apiKey: "AIzaSyAUZc0Dig0J9hqTBj2NYzWFei5FzRYdJXM",
+      authDomain: "etasks-aae57.firebaseapp.com",
+      databaseURL: "https://etasks-aae57.firebaseio.com",
+      storageBucket: "etasks-aae57.appspot.com",
+      messagingSenderId: "1098670847470"
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
